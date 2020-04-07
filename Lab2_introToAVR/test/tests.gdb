@@ -40,6 +40,23 @@ checkResult
 
 # Add tests below
 
+test "PINA : 0X01 => PORTS: 0X01"
+setPINA 0x01
+continue 2
+expectPORTB 0x01
+checkResult
+
+test "PINA: 2 => PORTS: 0"
+setPINA 0x02
+continue 2
+expectPORTB 0x00
+checkResult
+
+test "PINA: 3 => PORTS: 0"
+setPINA 0x03
+continue 2
+expectPORTB 0x00
+checkResult
 # Report on how many tests passed/tests ran
 set $passed=$tests-$failed
 eval "shell echo Passed %d/%d tests.\n",$passed,$tests
