@@ -30,7 +30,7 @@ int main(void) {
 	else{
 		PORTD = PORTD & ~(0x01 << 0);
 	}
-	if((PORTA - PORTC) > 80 || (PORTA - PORTC) < -80){
+	if((PINA - PINC) > 80){
 		PORTD = PORTD | (0x01 << 1);
 	}
 	else{
