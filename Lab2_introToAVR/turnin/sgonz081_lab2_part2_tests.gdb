@@ -43,13 +43,13 @@ checkResult
 test "PINA : 0X01 => PORTS: 0X01"
 setPINA 0x01
 continue 2
-expectPORTC 0x01
+expectPORTC 0x03
 checkResult
 
 test "PINA: 2 => PORTS: 1"
 setPINA 0x02
 continue 2
-expectPORTC 0x01
+expectPORTC 0x03
 checkResult
 
 test "PINA: 3 => PORTS: 2"
@@ -61,13 +61,13 @@ checkResult
 test "PINA: 8 => PORTS: 1"
 setPINA 0x08
 continue 2
-expectPORTC 0x01
+expectPORTC 0x03
 checkResult
 
 test "PINA: 15 => PORTS: 4"
-setPINA 0X0F
+setPINA 0x0F
 continue 2
-expectPORTC 0x04
+expectPORTC 0x00
 checkResult
 
 # Report on how many tests passed/tests ran

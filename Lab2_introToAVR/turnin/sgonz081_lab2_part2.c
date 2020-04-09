@@ -26,7 +26,7 @@ int main(void) {
 	int i;
 	for(i = 0; i < 4; i++){
 		tempA = PINA & mask;
-		if(tempA == mask){
+		if(tempA == 0x01){
 			cntavail++;
 		}
 		mask = mask << 1;	
