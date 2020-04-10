@@ -1,6 +1,6 @@
 /*	Author: sgonz081
- *  Partner(s) Name: 
- *	Lab Section:
+ *  	Partner(s) Name: 
+ *	Lab Section: 024
  *	Assignment: Lab #3  Exercise #1
  *	Exercise Description: [optional - include for your own benefit]
  *
