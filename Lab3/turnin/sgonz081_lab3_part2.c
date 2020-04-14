@@ -35,10 +35,10 @@ int main(void) {
 		result = 0x70;
 	}
 	else if((PINA <= 2) && (PINA >= 1)){
-		result = 0xC0;
+		result = 0x60;
 	}
 	else{
-		result = 0x00;
+		result = 0x40;
 	}
 	PORTC = result;
     }
