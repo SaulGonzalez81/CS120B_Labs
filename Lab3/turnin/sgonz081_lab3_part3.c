@@ -37,7 +37,7 @@ int main(void) {
 		result = 0x70;
 	}
 	else if((temp <= 2) && (temp >= 1)){
-		result = 0xC0;
+		result = 0x60;
 	}
 	else{
 		result = 0x00;
